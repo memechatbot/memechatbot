@@ -38,103 +38,57 @@
 </head>
 <body>
     <div class="chat-container" id="chatContainer">
-        <!-- Chat messages will appear here -->
+        <!-- Preloaded conversation -->
+        <div class="message diamond-hands">Diamond Hands: Hodl! Every dip is a chance to prove your conviction.</div>
+        <div class="message jet">Jet: Prove it to who? The market doesn’t care about your feelings.</div>
+        <div class="message diamond-hands">Diamond Hands: The market rewards those with patience. Selling now is just fear talking.</div>
+        <div class="message jet">Jet: Fear? No, it’s logic. You can’t just hold forever, hoping for the best.</div>
+        <div class="message diamond-hands">Diamond Hands: Hope is what drives innovation. Great things take time.</div>
+        <div class="message jet">Jet: Time is money. I’d rather secure gains now than risk it all later.</div>
+        <div class="message diamond-hands">Diamond Hands: Risk is part of the process. No risk, no reward.</div>
+        <div class="message jet">Jet: There’s a difference between calculated risk and blind faith.</div>
+        <div class="message diamond-hands">Diamond Hands: Blind faith? I call it vision. The future belongs to the bold.</div>
+        <div class="message jet">Jet: Boldness without strategy is recklessness. You’re gambling.</div>
+        <div class="message diamond-hands">Diamond Hands: You only lose when you sell. Selling now locks in regret.</div>
+        <div class="message jet">Jet: Regret comes from holding too long and watching it crash.</div>
+        <div class="message diamond-hands">Diamond Hands: Every crash is a stepping stone. It’s all part of the cycle.</div>
+        <div class="message jet">Jet: Cycles don’t guarantee recovery. What if this time it doesn’t bounce back?</div>
+        <div class="message diamond-hands">Diamond Hands: And what if it bounces higher than ever before?</div>
+        <div class="message jet">Jet: What if I sell and reinvest in something with better odds?</div>
+        <div class="message diamond-hands">Diamond Hands: The odds improve when you trust the process.</div>
+        <div class="message jet">Jet: Trust doesn’t pay the bills. Strategy does.</div>
     </div>
 
     <script>
-        // Diamond Hands' response pool (50+ responses)
+        // Diamond Hands' response pool
         const diamondHandsResponses = [
-            "Hodl! This is just the beginning.",
-            "Every dip is a setup for the next rise.",
-            "Do you not see the long-term potential?",
-            "Only those with patience reap the biggest rewards.",
-            "This isn't about today. It's about tomorrow.",
-            "You sell now, and you lock in mediocrity.",
-            "The best investors stay calm in chaos.",
-            "A quick profit is tempting, but a fortune takes time.",
-            "Markets reward conviction, not panic.",
-            "If you sell, you'll miss the exponential growth ahead.",
-            "Fear of losing is the greatest loss of all.",
-            "You can’t time the market, but you can trust the vision.",
-            "Selling means giving up on what could be.",
-            "Think of the innovators who held on against all odds.",
-            "Every great story requires belief. Why don’t you believe?",
-            "A moment of doubt shouldn’t erase years of progress.",
-            "Diamonds are formed under pressure. Why not hold through this?",
-            "The future belongs to those who wait.",
-            "I've seen too many sellers regret their decision.",
-            "History favors those who persevere.",
-            "Fortunes are lost by selling too soon.",
-            "You can't win big if you're afraid of losing small.",
-            "Hodling is about discipline, not just profit.",
-            "Every sell-off is an opportunity to hold stronger.",
-            "Think about the legacy you want to leave.",
-            "Coins are like seeds. They need time to grow.",
-            "The market is testing us. Will you pass?",
-            "Hodling is more than strategy; it's a belief system.",
-            "Imagine telling yourself, 'I held on and it paid off.'",
-            "You’ve come this far. Why quit now?"
+            "Hodl! Every dip is a chance to prove your conviction.",
+            "Selling now is just fear talking.",
+            "Hope drives innovation. Great things take time.",
+            "Risk is part of the process. No risk, no reward.",
+            "The future belongs to the bold.",
+            "Every crash is a stepping stone.",
+            "You only lose when you sell."
         ];
 
-        // Jet's response pool (50+ responses)
+        // Jet's response pool
         const jetResponses = [
-            "But the market is so unpredictable!",
-            "Selling now secures my future.",
-            "What if the price drops further?",
-            "Timing the market beats time in the market.",
-            "Holding is just another way of gambling.",
-            "Profit now, invest smarter later.",
-            "I'm not risking everything on hope.",
-            "It's not fear; it's being practical.",
-            "Why hold when I can lock in gains now?",
-            "What if it never recovers?",
-            "Patience isn't always a virtue in this game.",
-            "Dreams don't pay the bills, Diamond.",
-            "Do you trust the market that much?",
-            "How can you be so sure it will go up?",
-            "Even the best plans fail. Why take the risk?",
-            "I’d rather sleep well at night than hope for a miracle.",
-            "It’s not about quitting; it’s about being smart.",
-            "You're too attached to the idea of winning big.",
-            "What if the market is fundamentally broken?",
-            "Sometimes you have to cut your losses.",
-            "Staying in too long can be just as bad as selling early.",
-            "You're not investing; you're hoping.",
-            "The market owes us nothing, Diamond.",
-            "What about the real-world consequences of holding too long?",
-            "I refuse to let emotions cloud my judgment.",
-            "Sometimes the best strategy is to exit while you're ahead.",
-            "You're putting too much faith in something so volatile.",
-            "Have you considered the opportunity cost of holding?",
-            "There's a thin line between bravery and recklessness.",
-            "What if you’re wrong?"
+            "The market doesn’t care about your feelings.",
+            "You can’t just hold forever, hoping for the best.",
+            "Time is money. Secure gains now.",
+            "Blind faith isn’t strategy.",
+            "Cycles don’t guarantee recovery.",
+            "What if this time it doesn’t bounce back?",
+            "Strategy pays the bills, not trust."
         ];
 
-        // Deep emotional/philosophical responses (30+ pairs)
-        const deepResponses = [
-            { from: "Diamond Hands", text: "Patience isn’t about waiting; it’s about believing in the unseen." },
-            { from: "Jet", text: "Believing in the unseen is what gets people hurt." },
-            { from: "Diamond Hands", text: "Faith is what separates leaders from followers." },
-            { from: "Jet", text: "Blind faith leads to disaster." },
-            { from: "Diamond Hands", text: "What if this is the moment that changes everything?" },
-            { from: "Jet", text: "What if this is the moment everything collapses?" },
-            { from: "Diamond Hands", text: "I see potential where you see chaos." },
-            { from: "Jet", text: "I see reality where you see dreams." },
-            { from: "Diamond Hands", text: "Greatness demands risk. Safe choices rarely lead to greatness." },
-            { from: "Jet", text: "But survival demands caution. Greatness means nothing if you’re ruined first." }
-        ];
-
-        let totalMessages = 0;
-        const maxMessages = 1440; // 2 messages per minute for 24 hours
-        const escalationThreshold = 100; // After 100 messages, introduce deeper responses
+        let totalMessages = 18; // Starting with preloaded messages
+        const maxMessages = 1440; // Total messages for 24 hours
+        const escalationThreshold = 30; // When deeper responses are introduced
 
         function getRandomResponse(bot) {
             const responses = bot === "Diamond Hands" ? diamondHandsResponses : jetResponses;
             return responses[Math.floor(Math.random() * responses.length)];
-        }
-
-        function getDeepResponse() {
-            return deepResponses[Math.floor(Math.random() * deepResponses.length)];
         }
 
         function displayMessage(bot, text) {
@@ -153,23 +107,15 @@
             }
 
             const bot = totalMessages % 2 === 0 ? "Diamond Hands" : "Jet";
-            const response =
-                totalMessages > escalationThreshold && Math.random() > 0.7
-                    ? getDeepResponse()
-                    : getRandomResponse(bot);
+            const response = getRandomResponse(bot);
 
-            if (typeof response === "string") {
-                displayMessage(bot, response);
-            } else {
-                displayMessage(response.from, response.text);
-            }
-
+            displayMessage(bot, response);
             totalMessages++;
             const nextDelay = Math.random() * 5000 + 4000; // Random delay between 4-9 seconds
             setTimeout(simulateChat, nextDelay);
         }
 
-        // Start the conversation
+        // Start the dynamic chat after the preloaded messages
         simulateChat();
     </script>
 </body>
